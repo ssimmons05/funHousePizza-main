@@ -1,0 +1,112 @@
+header.masthead {
+    text-align: center;
+  }
+  
+  #logo {
+    width: 120px;
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    left: 40px;
+    z-index: 5;
+  }
+  @media (max-width: 575px) {
+    #logo {
+      width: 70px;
+      position: fixed;
+      display: inline-block;
+      top: 2px;
+      z-index: 5;
+    }
+  }
+  
+  /***************** NAVIGATION **********
+  ****************************************/
+  
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 60px;
+    background-color: #1d3557;
+    z-index: 1;
+  }
+  
+  #mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-family: "Mukta", sans-serif;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #457b9d;
+    border: 0;
+  }
+  #mainNav .navbar-brand {
+    color: #457b9d;
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+  }
+  
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family: "Mukta", sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link.active,
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #e63946;
+  }
+/******END OF NAV******
+***********************/
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/****** FOOTER ********
+**********************/
+
+footer {
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    background-color: #1D3557;
+    color: white;
+  }
+  
+  footer p {
+    font-size: 1.3rem;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  footer ul {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    top: -100px;
+    left: 200px;
+    padding-left: 15px;
+  }
+  
+  footer img {
+    width: 60px;
+    padding-left: 20px;
+  }
+  

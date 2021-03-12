@@ -84,6 +84,30 @@ a:hover {
 section {
   margin: auto;
 }
+
+h3 {
+  margin-top: 80px;
+  margin-left: 12px;
+  background-color: #E63946;
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: 'Merienda One', cursive;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.firstHeader {
+  margin-top: 30px;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
 .card-body {
   height: 5rem;
 }
@@ -98,12 +122,7 @@ section {
   height: auto;
   background-color: rgba(255, 255, 255, 0.884);
 }
-.categories .card:hover {
-  width: 100%;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.884);
-  box-shadow: 2px 2px 1px #607a8a27;
-}
+
 .col-4 img {
   height: auto;
   padding: 0;
@@ -142,7 +161,12 @@ section {
   width: 100%;
 }
 .sideBar ul {
-  list-style-type: none;
+  position: absolute;
+  top: 0;
+  margin-top: 150px;
+  z-index: 1;
+  list-style-type: none; 
+  border-radius: 5px;
 }
 .container {
   display: flex;
@@ -160,22 +184,20 @@ section {
   padding: 0;
 }
 .container .sideBar ul li {
-  padding: 5px;
-  border-top: 1px white solid;
-  border-bottom: 1px rgb(238, 238, 238) solid;
+  padding: 1px;
 }
 .container .sideBar ul li a {
   display: block;
-  width: 200px;
-  color: #1d3557;
-  font-size: 14px;
-  padding: 10px;
+  color: white;
+  background-color: #457b9d;
+  font-weight: bold;
+  padding: 12px;
   text-align: left;
 }
 .container .sideBar ul li a:hover {
   transition: 0.3sec ease;
-  color: white;
-  background-color: #457b9d;
+  color: red;
+  background-color: #607a8a27;
 }
 .container .row {
   margin: 0;
@@ -184,15 +206,16 @@ section {
 .container .card {
   position: relative;
   display: flex;
-  max-width: 18rem;
-  height: 22rem;
+  max-width: 95%;
+  height: 400px;
   box-shadow: 2px 2px 1px #607a8a27;
 }
-/* .container .card:hover {
+/*--Add hover effect - scale up image  ---*/
+ .container .card:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-} */
+} 
 .container .wrapper {
   width: 100%;
   margin-bottom: 5rem;
@@ -259,6 +282,7 @@ footer ul li {
   padding-left: 15px;
   display: inline-block;
 }
+
 @media (max-width: 1450px) {
   footer ul {
     left: 100px;
@@ -365,11 +389,7 @@ footer ul li {
   padding-left: 20px;
   display: inline-block;
 }
-.text-left {
-  margin-top: 30px;
-  margin-left: 8px;
-  color: #1d3557;
-}
+
 html {
   scroll-behavior: smooth;
 }
